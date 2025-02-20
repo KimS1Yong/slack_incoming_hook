@@ -9,7 +9,7 @@ public class Bot {
         // 웹훅을 만들 거임 -> URL 필요함
         // 환경변수로 받아올 것임 -> yml 파일에서 전달하게
         String webhookUrl = System.getenv("SLACK_WEBHOOK_URL");
-        String message = System.getenv("SLACK_WEBHOOK_MSG")
+        String message = System.getenv("SLACK_WEBHOOK_MSG");
 
         // Java 11 -> fetch
         HttpClient client = HttpClient.newHttpClient();
